@@ -1,7 +1,8 @@
 # guitar-project
+
 guitar neck (background to) draw notes and lines over >> Canvas-JS
 
-Use dropdown to choose colour given to every semi-tone
+Use dropdown to choose colour given to each semi-tone
 
 Use buttons to either draw these colours or a single colour of your choosing
 
