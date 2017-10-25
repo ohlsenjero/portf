@@ -1,0 +1,419 @@
+   @font-face {
+    font-family: 'arual';
+    src:url('../fonts/arual-webfont.eot');
+    src:url('../fonts/arual-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/arual-webfont.svg#plop') format('svg'),
+        url('../fonts/arual-webfont.woff') format('woff'),
+        url('../fonts/arual-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+   @font-face {
+    font-family: 'normt';
+    src:url('../fonts/normt-webfont.eot');
+    src:url('../fonts/normt-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/normt-webfont.svg#plop') format('svg'),
+        url('../fonts/normt-webfont.woff') format('woff'),
+        url('../fonts/normt-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+   @font-face {
+    font-family: 'ubuntumono';
+    src:url('../fonts/ubuntumono-r-webfont.eot');
+    src:url('../fonts/ubuntumono-r-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ubuntumono-r-webfont.svg#plop') format('svg'),
+        url('../fonts/ubuntumono-r-webfont.woff') format('woff'),
+        url('../fonts/ubuntumono-r-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background:#eee;
+    margin:0;
+    padding:0;
+}
+.nav{
+    /*background-color: #ddd;*/
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+html {
+    background-color: #fff;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* gallery styles */
+#gallery {
+    background-color:#fff;
+    position:relative;
+}
+#gallery ul#sets {
+    display:table;
+    list-style:none outside none;
+    margin:0 auto;
+    /*padding-top: 20px;*/
+    padding-top: 35px;
+    padding-bottom: 20px;
+/*    width:400px;*/   /* just trying to make sure, if sets increase a lot (to form a second row), the dropdown will still come up on top */ 
+                             /* and for that I have to add the #sets li a>> z-index  programatically, or else it creates a new context for it*/   
+}
+#gallery ul#sets li {
+    display: none;         /*  display: none;  WHEN starting from Photo-gallery    */
+    float:left;
+    padding-right:10px;             
+    text-align: center;
+    width: 200px;   /*******  make programatically  */
+}
+#gallery ul#sets li a {
+    border: 1px solid transparent;     /* needed, or else theres a whole that breaks the dropdown hover */ 
+    width: 200px;   
+    background-color:#fff;
+    color:#000;
+    cursor:pointer;
+    display:block;
+    font-size:18px;
+    font-weight:normal;
+    height:26px;
+    line-height:26px;
+    padding:10px 0;
+    text-decoration:none;
+}
+
+#gallery ul#sets li a:first-child{
+
+    border: 1px solid black;
+}
+#gallery ul#sets li:last-child a{
+    color:orange;
+}
+
+
+h3, h4, #gallery ul#sets li a {
+    font-family: 'normt';
+}
+
+
+#gallery ul#sets li a:hover{
+    background-color:#ff6a11;
+
+}
+/* 
+#gallery ul#sets li:last-child a {  /*  if you wanna start pointing out where you are...
+    color:orange;
+}
+*/
+
+#gallery #loading {
+    /* but for now..*/
+    display: none;
+    /* no display, don't need it */
+    text-align:center;
+    position: absolute;
+    top:48%;
+    color: #fff;
+    z-index: 5;
+    left: 40%;
+    right: 40%;
+/*position: absolute;
+margin: 0px 40%;
+text-align: center;
+display: inline-block;
+z-index: 4;*/
+}
+#gallery #photo {
+    display:none;
+    margin:0 auto;
+    padding-bottom:60px;
+    padding-top:40px;
+
+    position: relative;
+}
+#gallery .photo-frame {
+    display:block;
+
+    position: relative;
+
+    padding-bottom: 60px;
+}
+#gallery ul#thumbs {
+    list-style:none outside none;
+    margin:0 auto;
+    opacity:0.5;
+    overflow:hidden;
+    position:absolute;
+
+
+    z-index: 10;
+    padding-bottom: 60px;
+
+/*    -moz-transition: bottom 0.5s ease-in-out;
+    -ms-transition: bottom 0.5s ease-in-out;
+    -o-transition: bottom 0.5s ease-in-out;
+    -webkit-transition: bottom 0.5s ease-in-out;
+    transition: bottom 0.5s ease-in-out;*/
+}
+
+
+#gallery ul#thumbs:hover {
+    opacity:1;
+    bottom:20px;
+}
+#gallery ul#thumbs li {
+    cursor:pointer;
+    float:left;
+    height:38px;
+    width:58px;
+}
+#gallery ul#thumbs li:hover {
+}
+#gallery ul#thumbs li img {
+    width:100%;
+}
+
+
+#vid-thumbs {
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#vid-thumbs li {
+    list-style: none;
+    width: 29.3%;                /*  don't make square square if not Albums  */
+/*    height: 200px;  */  
+    display: inline-block;
+    margin: 20px 2% 20px 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+#vid-thumbs li img{
+    width:100%;
+    /*height: 100px;*/
+    margin:0 auto;
+}
+
+#gal-thumbs li {
+    list-style: none;
+    width: 29.3%;
+/*    height: 200px;  */  
+    display: inline-block;
+    margin: 20px 2% 20px 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+#gal-thumbs li img{
+    width:100%;
+}
+
+#gallery ul#thumbs li img.vid{
+    float: left;
+}
+
+
+#gallery img {
+    width: 100%;
+    margin:0 auto;
+}
+
+.photo-wrap {
+    position: relative;
+    width:70%;
+    margin:0 auto;
+}
+
+
+.left-arrow, .right-arrow{
+    display: none;
+    position: absolute;
+    top:20%;
+    width: 10%;
+    height: 60%;
+    opacity: 0.7;
+    z-index: 100;
+
+/* prevents the unwelcomed "selection" of the screen by double clicking... oddly enough it wouldn't only happen when clicking the right button */
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+    user-select: none;
+}
+.right-arrow{
+    background-image: url(../arrow-right.png);
+    background-size: 100% 100%;
+    right: -13%;
+}
+
+.left-arrow{
+    background-image: url(../arrow-left.png);
+    background-size: 100% 100%;
+    left: -13%;
+}
+
+.left-arrow:hover , .right-arrow:hover {
+
+    opacity: 0.9;
+}
+
+
+#iframe {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    /* top calculated on JS >> according to scrollTop */
+    z-index: 2;
+    display: none;
+}
+
+.iframe-close {
+    display: none;
+    width:70px;
+    height: 70px;
+    background-image: url(x-black.png); /* BACKGROUND IMG */
+    background-size:100% 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+    /* top calculated on JS >> according to scrollTop */
+    z-index: 2;
+}
+
+.insidegal-close {
+    display: none;
+    width:50px;
+    height: 50px;
+    background: purple;
+    position: absolute;
+    right: 20px;
+    top:0;
+    z-index: 2;
+}
+
+.forced-linko {
+      display: none;
+    width:50px;
+    height: 50px;
+    background: orange;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top:70px;
+    z-index: 2;  
+}
+
+.linko {
+    display: none;
+    width:50px;
+    height: 50px;
+    background: green;
+    display: block;
+    position: absolute;
+    right: 0;
+    top:50px;
+    z-index: 2;
+}
+
+.filter {
+    display: none;
+    width:50px;
+    height: 50px;
+    background: blue;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+.filter:hover{
+    cursor: pointer;
+}
+
+#all{
+
+    top:0;
+}
+
+
+#jazz{
+
+    top:60px;
+}
+#rock{
+
+    top:120px;
+}
+
+
+.insidegal-close:hover, .iframe-close:hover, .left-arrow:hover, .right-arrow:hover, #vid-thumbs li img:hover{
+
+    cursor: pointer;
+}
+
+
+
+.vid-name {
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+}
+.vid-artist {
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+/*
+
+#gallery ul#sets li a.jazz:focus{
+    background-color: red;
+}
+*/
+
+.selected {
+    display: block;
+}
+
+#sets {
+    position: relative;
+}
+#sets li {
+    position: relative;
+
+
+}
+
+#sets li a {
+    position: absolute;
+}
+#sets li a:first-child {
+    position: relative;
+
+}

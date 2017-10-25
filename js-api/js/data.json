@@ -1,0 +1,70 @@
+{
+
+    "Albums" : [
+
+    [
+        "vid"
+    ], [
+        ["Toon Time Raw!","Jerry Paper","Toon-Time-Raw.png", "https://www.youtube.com/embed/dPw8oUmxA-Y","rock"],
+        ["Floral Shoppe","Macintosh Plus","Floral-Shoppe.png", "https://www.youtube.com/embed/YcsYSJwewWk","vaporwave"], 
+        ["Sales","Sales","Sales.png", "https://www.youtube.com/embed/OpxnPFWkrp0","rock"],
+        ["Giant steps","John Coltrane", "Giant-steps.png", "https://www.youtube.com/embed/xr0Tfng9SP0","jazz"],
+        ["Bonus Cups","Descendents", "Bonus-Cups.png","https://www.youtube.com/embed/7ba0mo7ijOc","rock"], 
+        ["Post Civilization Muzak","Wolf Eyes", "Post-Civilization-Muzak.png","https://www.youtube.com/embed/B6-HrnEGa0E","noise"], 
+        ["I Thought I Was An Alien","Soko","I-Thought-I-Was-An-Alien.png", "https://www.youtube.com/embed/GGSVNBIs5Wc","rock"], 
+        ["Mm.. Food","MF Doom","Mm-Food.png", "https://www.youtube.com/embed/FbpEnkDQnhk","hip-hop"]
+    ]
+
+    ],"Study" : [
+
+    [
+        "vid"
+    ], [
+        ["Javascript Game Tutorial","Tig","Javascript-Game-Tutorial.png", "https://www.youtube.com/embed/VLpjfr7mgT0","coding"],
+        ["Lesson 7","Bireli Lagrene","Lesson-7.png", "https://www.youtube.com/embed/SzkOBNKl1Iw","guitar_tech"], 
+        ["Strings!","Pat Martino","Strings.png","https://www.youtube.com/embed/gXQYEr1oKJg","guitar_transcribe"],
+        ["Lesson Part 3","Pat Martino","Lesson-Part-3.png","https://www.youtube.com/embed/gXQYEr1oKJg","guitar_transcribe"]
+    ]
+
+    ],"Various" : [
+
+    [
+        "vid"
+    ], [
+        ["Richie Jackson","Death Skateboards","Death-Skateboards.png", "https://www.youtube.com/embed/8gXpZmQ7j70","skate"],
+        ["Evan Smith","Best of 2016","Best-of-2016.png", "https://www.youtube.com/embed/KOUarLd_tJ8","skate"], 
+        ["Dylan Rieder","The True Blue","The-True-Blue.png","https://www.youtube.com/embed/xtCKZWleUNs","skate"],
+        ["Aaron \"jaws\" Homoki","Jaws vs the Lyon 25","Jaws-vs-the-Lyon.png","https://www.youtube.com/embed/4GFIXrybfKg","skate"],
+        ["Lightning Bolt","The Metal East","The-Metal-East.png","https://www.youtube.com/embed/h9T0ICrAzqU","musicvid"],
+        ["Pavement","Gold Soundz","Gold-Soundz.png","https://www.youtube.com/embed/lPvhKV3Yg2k","musicvid"],
+        ["Raffalli _ Garcia","Four","Four.png","https://www.youtube.com/embed/lPvhKV3Yg2k","guitar-masters"],
+        ["Postmortem","Diablo","Diablo.png","https://www.youtube.com/embed/VscdPA6sUkc","coding"],
+        ["AGDQ 2015","Battletoads Co_Up Speed Run","Battletoads-Co_Up.png","https://www.youtube.com/embed/pvnsZeDQ8GE","games"]
+    ]
+
+    ],
+
+    "Art" : [
+    [
+        "mono"
+    ],
+        [
+            ["1","1.jpg", "photo"], 
+            ["2","2.jpg", "photo"],
+            ["4","3.jpg", "photo"], 
+            ["6","4.jpg", "photo"],
+            ["ty","5.jpg", "photo"], 
+            ["gh","6.jpg"],
+            ["4dd","7.jpg"], 
+            ["12","8.jpg"], 
+            ["32","9.jpg"],
+            ["42","10.jpg"], 
+            ["62","11.jpg"], 
+            ["4dd23","12.jpg"],
+            ["32","13.jpg"],
+            ["42","14.jpg"], 
+            ["62","15.jpg"], 
+            ["4dd23","16.jpg"]
+        ]
+    ]
+};
