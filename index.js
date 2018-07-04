@@ -5,6 +5,48 @@
 
 //////////////////////////////    instead of TimeOut, have them rotate on click... so as to give the user something to do before jumping in
 
+var currentLoc = 0;
+
+var menuArr = ["#about", "#experiments", "#site1", "#site2", "#contact"];
+
+document.addEventListener("keydown", function(e) {
+
+  checkKey(e, true); 
+      
+}, false);
+
+
+var keysPressed = []; 
+
+var keyDown={isDown:false, whatKey:null};
+
+function checkKey(e, value) {
+
+  keyDown.isDown=true;
+        // e = e || event; 
+  keysPressed[e.keyCode] = e.type;
+
+  if(e.keyCode==39){
+    //alert("PRESSED RIGHT");
+    currentLoc++;
+
+  }else if(e.keyCode==37){
+    //alert("PRESSED LEFT");
+    currentLoc--;
+  }
+
+  if(currentLoc== -1){
+    currentLoc=menuArr.length-1;
+  }else if(currentLoc==5){
+    currentLoc=0;
+  }
+
+  $(document).ready(function(){
+    $('.nav ul li:nth-child('+(currentLoc+1)+')').find('a').click();
+  });
+  // window.location = menuArr[currentLoc];
+
+}
 
 
 
@@ -402,12 +444,6 @@ location="#about";
       var divo2 = document.getElementById("divo2");
        var divo3 = document.getElementById("divo3");
 
-    //var divo11 = document.getElementById("divo11");
-
-// var divo1left = divo1.offsetLeft;
-// var divo2left = divo2.offsetLeft;
-// var divo3left = divo3.offsetLeft;
-// var divo4left = divo4.offsetLeft;
 
 
 
@@ -445,11 +481,8 @@ $('.divo').click(function() {   /// algo raro pasa aqui
 
 
 
-
      for (var i=0; i < $('#inner-wrapper').children().length; i++) {
-      //alert(i);
-        //alert(document.getElementById("container").children[i].className);
-        // alert(Math.round($(this).offset().left));
+      
           document.getElementById("inner-wrapper").children[i].style.left=100/$('#inner-wrapper').children().length*i+'%';
 
           document.getElementById("inner-wrapper").children[i].style.width=100/$('#inner-wrapper').children().length+'%';
@@ -571,10 +604,8 @@ function() {
 
   setTimeout(function(){   $('.b').fadeOut(100);  }, 700);
 
-
     //////   CAN'T do it programmatically!!
 
- 
             $('#divo1').animate({
               'left': 100/$('#inner-wrapper').children().length*0+'%',
               'width':100/$('#inner-wrapper').children().length+'%'
@@ -590,40 +621,6 @@ function() {
             }, 500); 
            
 
-    //  for (var i=0; i < $('#inner-wrapper').children().length; i++) {
-       
-    //     document.getElementById("inner-wrapper").children[i].style.zIndex='1';
-
-    //     // for (var e=0; e<$('#inner-wrapper').children().length; e++){
-    //     //   if($('#inner-wrapper .divo:nth-child('+(e+1)+')').attr('id')==document.getElementById("inner-wrapper").children[i].getAttribute('id')){
-    //     //     //  $($('#inner-wrapper .divo:nth-child('+(e+1)+')').attr('id')).animate({
-    //     //     //   'left': 100/$('#inner-wrapper').children().length*i+'%',
-    //     //     //   'width':100/$('#inner-wrapper').children().length+'%'
-    //     //     // }, 500);
-    //     //     $('#divo3').animate({
-    //     //       'left': 100/$('#inner-wrapper').children().length*i+'%',
-    //     //       'width':100/$('#inner-wrapper').children().length+'%'
-    //     //     }, 500);}
-    //     // }
-   
-       
-    //      //  document.getElementById("inner-wrapper").children[i].style.left=100/$('#inner-wrapper').children().length*i+'%';
-
-    //      // document.getElementById("inner-wrapper").children[i].style.width=100/$('#inner-wrapper').children().length+'%';
-            
-    // }//for
-        // for (var e=0; e<$('#inner-wrapper').children().length; e++){
-        //      //alert($('#inner-wrapper .divo:nth-child('+(e+1)+')').attr('id'));
-        //   // if($('#inner-wrapper .divo:nth-child('+(e+1)+')').attr('id')==document.getElementById("inner-wrapper").children[i].getAttribute('id')){
-        //   //   currentOne=document.getElementById("inner-wrapper").children[i];
-
-        //   $($('#inner-wrapper .divo:nth-child('+(e+1)+')').attr('id')).animate({
-        //     'left': 100/$('#inner-wrapper').children().length*i+'%',
-        //     'width':100/$('#inner-wrapper').children().length+'%'
-        //   }, 500);
-
-        // } //////////////    CANT ANIMATE  BACK YET
-
 
   //idol = $( this ).attr('id');
   // array
@@ -631,55 +628,7 @@ function() {
 
   $('.b').css('display','none');
      
-    // if(idol[0]=='divo1'){   
-    //  $('#divo1').animate({
-    //   left: 0,
-    //   top: 0+"px",
-    //   height: (window.innerHeight)/2+"px",
-    //   width: (window.innerWidth)/2+"px"
-    // }, 500);   
 
-    //   //$('#divo1').css("left","0");
-    //   // $('#divo2').css("left",(window.innerWidth)/3+"px");
-    //   // $('#divo3').css(((window.innerWidth)/3)*2+"px");
-    //   // $('#divo4').css("left","0");
-    //   // $('#divo5').css("left",(window.innerWidth)/3+"px");
-    //   // $('#divo6').css("left",((window.innerWidth)/3)*2+"px");
-
-    // }else  if(idol[0]=='divo2'){
-    //   //alert(divo2left);
-    //    $('#divo2').animate({
-    //   left: (window.innerWidth)/2+"px",
-    //    top: 0+"px",
-    //   height: (window.innerHeight)/2+"px",
-    //   width: (window.innerWidth)/2+"px"
-    // }, 500);
-     
-    // }else  if(idol[0]=='divo3'){
-    //    $('#divo3').animate({
-    //  left: 0,
-    //   top: (window.innerHeight)/2+"px",
-    //   height: (window.innerHeight)/2+"px",
-    //   width: (window.innerWidth)/2+"px"
-    // }, 500);
-     
-    // }else  if(idol[0]=='divo4'){
-    //    $('#divo4').animate({
-    //   left: ((window.innerWidth)/2)+"px",
-    //    top:  (window.innerHeight)/2+"px",
-    //   height: (window.innerHeight )/2+"px",
-    //   width: (window.innerWidth)/2+"px"
-    // }, 500);
-     
-    // }
-
-
-// $('.divo').animate({
-//       left: 0,
-//        top:  0,
-//       height: (window.innerHeight - 66)/2+"px",
-//       width: (window.innerWidth)/3+"px"
-//     }, 50);
 
     setTimeout(function(){     
 
@@ -707,34 +656,6 @@ var pic5 = new Image();
     pic5.src="img/5.png";
 
 
-// function getScrollbarWidth() {
-//     var outer = document.createElement("div");
-//     outer.style.visibility = "hidden";
-//     outer.style.width = "100px";
-//     outer.style.msOverflowStyle = "scrollbar"; // needed for WinJS apps
-
-//     document.body.appendChild(outer);
-
-//     var widthNoScroll = outer.offsetWidth;
-//     // force scrollbars
-//     outer.style.overflow = "scroll";
-
-//     // add innerdiv
-//     var inner = document.createElement("div");
-//     inner.style.width = "100%";
-//     outer.appendChild(inner);        
-
-//     var widthWithScroll = inner.offsetWidth;
-
-//     // remove divs
-//     outer.parentNode.removeChild(outer);
-
-//     return widthNoScroll - widthWithScroll;
-// }
-
-//alert(window.innerWidth);
-//document.body.innerHTML = "Scrollbar width is: "+getScrollbarWidth()+"px";
-
 
 
 (function($) {
@@ -742,36 +663,6 @@ var pic5 = new Image();
         return this.get(0).scrollHeight > this.height();
     }
 })(jQuery);
-
-//alert($('.panel').hasScrollBar());
-
-
-
-
-//alert(window.location.href);
-  // if($('.panel').hasScrollBar()){
-
-  //   $('.nav').css("width", "100%");
-  //   $('.nav li').css("width",window.innerWidth/5- (window.innerWidth/5)/5 -1+"px" );
-
-  //   // $('.nav').css("width", window.innerWidth-getScrollbarWidth()+"px");
-  //   // $('.nav li').css("width",window.innerWidth/5- (window.innerWidth/5)/5 -1-getScrollbarWidth()/5+"px" );
-
-  //       //     $('.divo').css('height',divoHeight);
-  //       // $('.divo').css('width', (window.innerWidth-getScrollbarWidth())/3+"px");
-  // }else{
-  //   $('.nav').css("width", "100%");
-  //   $('.nav li').css("width",window.innerWidth/5- (window.innerWidth/5)/5 -1+"px" );
-
-  //   $('.divo').css('height',divoHeight);
-  //   $('.divo').css('width', (window.innerWidth)/2+"px");
-  // }
-
-
-
-
-
-  //$('.panel').css({"width": window.innerWidth+"px", "height": window.innerHeight+"px"});
 
 /*  NEEDED FOR ALL OF THE CODE BELOW TO WORK  */
 
@@ -798,24 +689,9 @@ var pic5 = new Image();
 
 var lastHash = [];
 
-  /* SMOOTH SWITCHING FROM PANEL TO PANEL */
-// $('.nav ul li a').hover(function(){
-//   if(!$(this).hasClass('selected'){
-//      $(this).css('color', 'red');
-//   }
-// },function(){
-//    if(!$(this).hasClass('selected'){
-//   $(this).css('color', 'white');
-//   }
-// });
 
-//$('.selected').css('color', '#e62046');
 
  $('.nav ul li a').click(function(){
-
-
-
-
   //alert('clicked');
   $('.nav ul li a').removeClass('selected').addClass('unselected');
  });
@@ -826,8 +702,6 @@ var lastHash = [];
     $panels.each(function() {
       var $panel = $(this);
       var hash = '#' + this.id;
-
-
 
       //alert(window.location.hash);
       
@@ -849,18 +723,8 @@ var lastHash = [];
           //$('.selected').css('color', 'red');
 
 
-          console.log(this);
-          // if($('.panel').hasScrollBar()){
-
-          //   // $('.nav').css("width", window.innerWidth-getScrollbarWidth()+"px");
-          //   // $('.nav li').css("width",window.innerWidth/5- (window.innerWidth/5)/5 -1-getScrollbarWidth()/5+"px" );
-
-          //    $('.nav').css("width", "100%");
-          //   $('.nav li').css("width",window.innerWidth/5- (window.innerWidth/5)/5 -1+"px" );
-          // }else{
-          //   $('.nav').css("width", "100%");
-          //   $('.nav li').css("width",window.innerWidth/5- (window.innerWidth/5)/5 -1+"px" );
-          // }
+         // console.log(this);
+        
 
           if(hash!= "#contact"){
             $('.wrapper-top').css('position', 'absolute');
@@ -1180,79 +1044,6 @@ var lastHash = [];
     $window.load(center).resize(center);
   });
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
