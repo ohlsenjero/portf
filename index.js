@@ -9,46 +9,66 @@ var currentLoc = 0;
 
 var menuArr = ["#about", "#experiments", "#site1", "#site2", "#contact"];
 
-document.addEventListener("keydown", function(e) {
-
-  checkKey(e, true); 
-      
-}, false);
 
 
 var keysPressed = []; 
 
 var keyDown={isDown:false, whatKey:null};
 
+//prevents problem: pressed+hold >> goes round over menu like crazy and contact page wont show up anymore
+//prevent press+hold  <<<   /// ON KEY UP MAKE  var false, on DOWN true, only do this click ONCE >> $('.nav ul li:nth-child('+(currentLoc+1)+')').find('a').click();
+
+var pressed=false;
+
+document.addEventListener("keydown", function(e) {
+
+  checkKey(e, true); 
+
+      
+}, false);
+
+document.addEventListener("keyup", function(e) {
+
+  keysPressed = [];
+    keyDown.isDown=false; 
+     pressed=true;
+
+}, false);
+
+
 function checkKey(e, value) {
 
   keyDown.isDown=true;
+
         // e = e || event; 
   keysPressed[e.keyCode] = e.type;
 
-  if(e.keyCode==39){
-    //alert("PRESSED RIGHT");
-    currentLoc++;
+  if(pressed){
 
-  }else if(e.keyCode==37){
-    //alert("PRESSED LEFT");
-    currentLoc--;
+    if(e.keyCode==39){
+      //alert("PRESSED RIGHT");
+      currentLoc++;
+
+    }else if(e.keyCode==37){
+      //alert("PRESSED LEFT");
+      currentLoc--;
+    }
+
+    if(currentLoc== -1){
+      currentLoc=menuArr.length-1;
+    }else if(currentLoc==5){
+      currentLoc=0;
+    }
+
+    $(document).ready(function(){
+      $('.nav ul li:nth-child('+(currentLoc+1)+')').find('a').click();
+    });
+
+    pressed=false;
   }
-
-  if(currentLoc== -1){
-    currentLoc=menuArr.length-1;
-  }else if(currentLoc==5){
-    currentLoc=0;
-  }
-
-  $(document).ready(function(){
-    $('.nav ul li:nth-child('+(currentLoc+1)+')').find('a').click();
-  });
   // window.location = menuArr[currentLoc];
 
 }
-
-
 
   //set variables references for all the various form elements;
   var $contactForm = $(".contact-form"),
