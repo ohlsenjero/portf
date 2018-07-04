@@ -649,11 +649,15 @@ var pic2 = new Image();
 var pic3 = new Image();
 var pic4 = new Image();
 var pic5 = new Image();
+var pic6 = new Image();
+var pic7 = new Image();
     pic.src="img/1.png";
     pic2.src="img/2.png";
     pic3.src="img/3.png";
     pic4.src="img/4.png";
     pic5.src="img/5.png";
+    pic6.src="img/6.png";
+    pic7.src="img/7.png";
 
 
 
