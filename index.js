@@ -432,7 +432,7 @@ location="#about";
 ////  no need for the whole address >>> gets added to the end
 
 
-  initText('Hi, and welcome: Here you will find some examples of what I\'ve done in the past.  The first section contains a few experiments and side projects, while the next ones have official websites I\'ve worked on as a front-end developer. You can also visit my github below, to view current projects ', abouttext, 2);
+  initText('Hi, and welcome: Here you will find some examples of what I\'ve done in the past [use the arrow-keys to navigate].  The first section contains a few experiments and side projects, while the next ones have official websites I\'ve worked on as a front-end developer. You can also visit my github below, to view current projects ', abouttext, 2);
 
 
 
@@ -703,6 +703,8 @@ var lastHash = [];
       var $panel = $(this);
       var hash = '#' + this.id;
 
+
+
       //alert(window.location.hash);
       
         $('a[href="' + hash + '"]').stop().click(function(event) {
@@ -724,7 +726,23 @@ var lastHash = [];
 
 
          // console.log(this);
-        
+        // alert(hash);
+         currentHash(hash);
+
+         function currentHash(hasho){
+          var thisHash = hasho;
+          if(thisHash=="#about"){
+            currentLoc=0;
+          }else if(thisHash=="#experiments"){
+            currentLoc=1;
+          }else if(thisHash=="#site1"){
+            currentLoc=2;
+          }else if(thisHash=="#site2"){
+            currentLoc=3;
+          }else if(thisHash=="#contact"){
+            currentLoc=4;
+          }
+         }
 
           if(hash!= "#contact"){
             $('.wrapper-top').css('position', 'absolute');
@@ -1044,6 +1062,79 @@ var lastHash = [];
     $window.load(center).resize(center);
   });
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
