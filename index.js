@@ -17,8 +17,8 @@ var keyDown={isDown:false, whatKey:null};
 
 //prevents problem: pressed+hold >> goes round over menu like crazy and contact page wont show up anymore
 //prevent press+hold  <<<   /// ON KEY UP MAKE  var false, on DOWN true, only do this click ONCE >> $('.nav ul li:nth-child('+(currentLoc+1)+')').find('a').click();
-
-var pressed=false;
+// ACTUALLY NEEDS TIMER...
+var pressed=true;
 
 document.addEventListener("keydown", function(e) {
 
@@ -31,7 +31,9 @@ document.addEventListener("keyup", function(e) {
 
   keysPressed = [];
     keyDown.isDown=false; 
-     pressed=true;
+    setTimeout(function(){ 
+    pressed=true;
+  }, 800); 
 
 }, false);
 
