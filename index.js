@@ -442,7 +442,7 @@ experimentsSize();
 
 window.onload = function(){
 
-//window.location.href = "https://rawgit.com/ohlsenjero/portf/master/index.html#about";
+//window.location.href = "https://raw.githack.com/ohlsenjero/portf/master/index.html#about";
 $(document).ready(function(){
 
 $('.nav ul li:first-child  a').click();
@@ -606,18 +606,18 @@ $('.b, .nav li').click(
 function() {
 
 
-  divo1.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo1text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://rawgit.com/ohlsenjero/portf/master/DMlive-site/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
+  divo1.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo1text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/portf/master/DMlive-site/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
   divo2.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo2text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"http://vidplus.herokuapp.com/\" target=\"_blank\">VIEW SITE</a></div></div>";
-  divo3.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo3text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://rawgit.com/ohlsenjero/portf/master/wow/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
+  divo3.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo3text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/portf/master/wow/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
 
 
   setTimeout(function(){     
 
 
 
-  divo1.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo1text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://rawgit.com/ohlsenjero/portf/master/DMlive-site/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
+  divo1.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo1text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/portf/master/DMlive-site/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
   divo2.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo2text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"http://vidplus.herokuapp.com/\" target=\"_blank\">VIEW SITE</a></div></div>";
-  divo3.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo3text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://rawgit.com/ohlsenjero/portf/master/wow/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
+  divo3.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo3text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/portf/master/wow/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
 
 
   //anim2();
@@ -1088,85 +1088,6 @@ var lastHash = [];
     $window.load(center).resize(center);
   });
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
