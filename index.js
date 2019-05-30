@@ -454,7 +454,7 @@ location="#about";
 ////  no need for the whole address >>> gets added to the end
 
 
-  initText('Hi, and welcome: Here you will find some examples of what I\'ve done in the past [use the arrow-keys to navigate].  The first section contains a few experiments and side projects, while the next ones have official websites I\'ve worked on as a front-end developer. You can also visit my github below, to view current projects ', abouttext, 2);
+  initText('Hi, and welcome: Here you will find some examples of what I\'ve done in the past.  The first section contains a few experiments and side projects, while the next ones have official websites I\'ve worked on as a front-end developer. You can also visit my github below, to view current projects ', abouttext, 2);
 
 
 
