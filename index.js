@@ -567,7 +567,7 @@ $('.divo').click(function() {   /// algo raro pasa aqui
       //alert(divo1.offsetLeft);
     }else  if(idol[0]=='divo2'){
 
-      initText("Node JS: Node JS site using MongoDB. It features a multi-user platform where you can swap between seeing only what you uploaded vs seeing everything ", divo2text, "0");
+      initText("JS API: Single-page site where the HTML is dynamically populated based on JSON data", divo2text, "0");
 
     
       
