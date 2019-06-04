@@ -567,7 +567,7 @@ $('.divo').click(function() {   /// algo raro pasa aqui
       //alert(divo1.offsetLeft);
     }else  if(idol[0]=='divo2'){
 
-      initText("JS API: Single-page site where the HTML is dynamically populated based on JSON data", divo2text, "0");
+      initText("JS API: Single-page site where the HTML is dynamically populated based on JSON data ", divo2text, "0");
 
     
       
