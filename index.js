@@ -607,7 +607,7 @@ function() {
 
 
   divo1.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo1text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/portf/master/DMlive-site/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
-  divo2.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo2text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"http://vidplus.herokuapp.com/\" target=\"_blank\">VIEW SITE</a></div></div>";
+  divo2.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo2text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/github-upload/master/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
   divo3.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo3text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/portf/master/wow/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
 
 
@@ -616,7 +616,7 @@ function() {
 
 
   divo1.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo1text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/portf/master/DMlive-site/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
-  divo2.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo2text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"http://vidplus.herokuapp.com/\" target=\"_blank\">VIEW SITE</a></div></div>";
+  divo2.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo2text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/github-upload/master/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
   divo3.innerHTML = "<div class=\"innertext-wrapper\"><div id=\"divo3text\"></div></div><div class=\"pattern-bg\"><div class=\"divosite\"><a href=\"https://raw.githack.com/ohlsenjero/portf/master/wow/index.html\" target=\"_blank\">VIEW SITE</a></div></div>";
 
 
